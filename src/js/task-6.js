@@ -19,18 +19,8 @@ function onCreateElements() {
   }
 }
 
-function onClearBoxEl() {
-  list.innerHTML = '';
-}
-
-function getRandomHexColor() {
-  return `#${Math.floor(Math.random() * 16777215)
-    .toString(16)
-    .padStart(6, 0)}`;
-}
-
 function createBoxes(amount) {
-  list.innerHTML = '';
+  onClearBoxEl();
 
   let size = 30;
 
@@ -43,4 +33,14 @@ function createBoxes(amount) {
 
     size += 10;
   }
+}
+
+function getRandomHexColor() {
+  return `#${Math.floor(Math.random() * 16777215)
+    .toString(16)
+    .padStart(6, 0)}`;
+}
+
+function onClearBoxEl() {
+  list.innerHTML = '';
 }

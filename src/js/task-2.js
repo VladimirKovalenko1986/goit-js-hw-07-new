@@ -28,9 +28,12 @@ const images = [
 const list = document.querySelector('.gallery');
 
 images.map(({ url, alt }) => {
-  const img = document.createElement('img');
-  img.src = url;
-  img.alt = alt;
-  img.classList.add('gallery-img');
-  list.append(img);
+  // const img = document.createElement('img');
+  // img.src = url;
+  // img.alt = alt;
+  // img.classList.add('gallery-img');
+  // list.append(img);
+  const markup = `<img class ="gallery-img" src="${url}" alt="${alt}">`;
+
+  list.insertAdjacentHTML('beforeend', markup);
 });
