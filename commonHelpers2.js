@@ -1,0 +1,2 @@
+import"./assets/modulepreload-polyfill-3cfb730f.js";/* empty css                      */const o=document.querySelector("#categories");o.children;const n=document.querySelectorAll(".item");document.querySelector(".item");n.forEach(e=>{const t=e.firstElementChild,l=e.lastElementChild;console.log(`Category: ${t.textContent}`),console.log(`Elements: ${l.children.length}`)});
+//# sourceMappingURL=commonHelpers2.js.map
